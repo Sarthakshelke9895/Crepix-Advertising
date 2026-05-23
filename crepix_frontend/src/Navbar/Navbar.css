@@ -3,8 +3,8 @@
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding: 8px 20px;
-height: 80px;
+padding: 8px 100px;
+height: 89px;
 position: fixed;
 top: 0;
 left: 0;
@@ -17,7 +17,7 @@ background-color: transparent;
 
 .navbar.scrolled
 {
-background-color:#0b0b0bd4;
+background-color:#0a203de2;
 backdrop-filter: blur(10px);
 }
 

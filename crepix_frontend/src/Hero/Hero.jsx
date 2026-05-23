@@ -107,7 +107,7 @@ const Hero = () => {
 
           <div className="slide" key={index}>
 
-            <img src={slide.image} alt={slide.title} />
+            <img src={slide.image} alt={slide.title} loading="lazy"  />
 
             <div className="overlay"></div>
 

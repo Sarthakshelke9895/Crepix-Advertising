@@ -34,23 +34,53 @@
 {
   position: absolute;
   inset: 0;
- background-color: #00000057;
+ background-color: #0000009f;
 }
 
 .caption
 {
   position: absolute;
   bottom: 80px;
-  left: 8%;
-  max-width: 560px;
+  left: 5%;
+  width: 85%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  list-style: none;
+  padding: 0;
+}
+
+.details-grid li {
+  position: relative;
+  padding: 12px 12px 12px 40px;
+  background: #16161686;
+  border-radius: 10px;
   color: white;
 }
 
+/* Unique Symbol */
+.details-grid li::before {
+  content: "✦";
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00d9ff;
+  font-size: 18px;
+}
 .caption h1
 {
   font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 14px;
+  font-weight: 600;
+  margin-bottom: 1px;
+  letter-spacing: 1px;
   font-family: Poppins, sans-serif;
 }
 
@@ -58,12 +88,13 @@
 {
   font-size: 18px;
   line-height: 1.6;
-  color: #E6E6E6;
-  margin-bottom: 24px;
+  color: #A1A1AA;
+  margin-bottom: 20px;
+  font-weight: 300;
 }
 .book-btn-hero{
   
-background-color: #ff4c4c;
+background-color: #FF6B00;
 color: white;
 padding: 10px 15px;
 border: none;

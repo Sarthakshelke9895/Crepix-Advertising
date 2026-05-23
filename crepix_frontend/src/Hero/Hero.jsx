@@ -12,18 +12,21 @@ const Hero = () => {
   const slides = [
     {
       image: car1,
-      title: "Reliable City Rides",
-      description: "Comfortable and safe travel for daily transportation."
+      title: "Printing Services",
+      description: "High-quality printing solutions for all your needs.",
+      details: ["Visting Card", "Brochure", "Banner", "Flex Printing", "Sticker Printing", "T-shirt Printing"]
     },
     {
       image: car2,
-      title: "Airport Pickup Service",
-      description: "On-time pickup with professional drivers."
+      title: "Design Services",
+      description: "Creative design solutions to elevate your brand.",
+      details: ["Logo Design", "Brand Identity", "Custom Graphics", "Packaging Design", "Social Media Graphics", "Banner Design"]
     },
     {
       image: car3,
-      title: "Outstation Travel",
-      description: "Travel long distances safely and comfortably."
+      title: "Marketing Solutions",
+      description: "Effective marketing strategies to grow your business.",
+      details: ["Digital",  "Social Media ", "Email", "Content Creation", "SEO", "PPC Advertising"]
     }
   ];
 
@@ -79,9 +82,9 @@ const Hero = () => {
 
   }, [current, slides.length]);
     const handleEnquiry = () => {
-  const message = `Hi, I want to enquire about your car services.`;
+  const message = `Hi, I want to enquire about Crepix services.`;
   // Replace 919XXXXXXXXX with your full number (country code + number)
-  window.open(`https://wa.me/918767143132?text=${encodeURIComponent(message)}`);
+  window.open(`https://wa.me/919356309246?text=${encodeURIComponent(message)}`);
 };
 
   return (
@@ -109,15 +112,31 @@ const Hero = () => {
             <div className="overlay"></div>
 
             <div className="caption">
-
+              <div className="caption-left">
               <h1>{slide.title}</h1>
 
               <p>{slide.description}</p>
 
               <button className="book-btn-hero"  onClick={handleEnquiry}>
-                Book Now
+                Enquire Now
                 <img src={arrow} alt="Arrow" className='arrow2' />
               </button>
+              </div>
+
+
+
+
+
+              <div className="caption-right"> 
+             <div className="Details">
+                <ul className="details-grid">
+                  {slide.details.map((detail, index) => (
+                    <li key={index}>{detail}</li>
+                  ))}
+                </ul>
+              </div>
+              </div>
+
 
             </div>
 

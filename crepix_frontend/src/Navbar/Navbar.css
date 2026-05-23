@@ -17,20 +17,20 @@ background-color: transparent;
 
 .navbar.scrolled
 {
-background-color: rgba(0, 0, 50, 0.85);
+background-color:#0b0b0bd4;
 backdrop-filter: blur(10px);
 }
 
 .web-logo
 {
-height: 65px;
+height: 54px;
 }
 
 .logo-and-name
 {
 display: flex;
 align-items: center;
-gap: 4px;
+gap: 10px;
 }
 
 .company-name
@@ -87,12 +87,12 @@ transition: color 0.3s ease;
 
 .nav-menu li:hover
 {
-color: #CBA135;
+color: #FF6B00;
 }
 
 .book-btn-navbar
 {
-background-color: #ff4c4c;
+background-color: #FF6B00;
 color: white;
 padding: 10px 15px;
 border: none;
@@ -110,7 +110,7 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 
 .book-btn-navbar:hover
 {
-background-color: #e03e3e;
+background-color: #ff6a00eb;
 transform: translateY(-1px);
 }
 

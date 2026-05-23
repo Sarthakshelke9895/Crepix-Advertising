@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import './Navbar.css'
 import { Link } from 'react-scroll';
-import logo from '../Assets/weblogo1.png'
+import logo from '../Assets/crepix-logo.png'
 import arrow from '../Assets/arrow.png'
 import menu_icon from "../Assets/menu.png";
 import close_icon from "../Assets/close.png";
@@ -10,9 +10,9 @@ import close_icon from "../Assets/close.png";
 
 const Navbar = () => {
   const handleEnquiry = () => {
-  const message = `Hi, I want to enquire about your car services.`;
+  const message = `Hi, I want to enquire about Crepix services.`;
   // Replace 919XXXXXXXXX with your full number (country code + number)
-  window.open(`https://wa.me/918767143132?text=${encodeURIComponent(message)}`);
+  window.open(`https://wa.me/919356309246?text=${encodeURIComponent(message)}`);
 };
  const [scrolled, setScrolled] = useState(false);
 
@@ -45,8 +45,8 @@ setMenuOpen(false)
   }}>
             <img src={logo} alt="Logo" className='web-logo' />
             <div className="company-name">
-              <h2>Rohan Cab Service</h2>
-              <h4>Car | Rental | Sales</h4>
+              <h2>Crepix Advertising</h2>
+              <h4>Creative Prints. Powerful Brands.</h4>
             </div>
 
       </div>
@@ -82,7 +82,7 @@ setMenuOpen(false)
             duration={500}
              onClick={closeMenu}
           >
-            Cars
+            Works
           </Link>
             </li>
             <li>
@@ -110,7 +110,7 @@ setMenuOpen(false)
           </ul>
   
         <button className="book-btn-navbar"  onClick={handleEnquiry}>
-          Book Now
+          Enquire Now
           <img src={arrow} alt="Arrow" className='arrow' />
         </button>
 
